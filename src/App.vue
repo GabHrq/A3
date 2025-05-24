@@ -1,11 +1,6 @@
 <template>
   <div class="body">
-    <nav class="flex">
-      <div class="nav-container">
-        <div class="nav-left"><p>esquerda</p></div>
-        <div class="nav-right"><p>direita</p></div>
-      </div>
-    </nav>
+    <nav><Navbar /></nav>
     <div class="container">
       <header>
         <h1 class="text-2xl flex justify-center font-bold mb-4">Flappy Graphic</h1>
@@ -14,14 +9,6 @@
         <PipeGame />
       </div>
       <div class="container info">
-        <div class="info1">
-          <button>Burger 1</button>
-          <p>Teste</p>
-        </div>
-        <div class="info1">
-          <button>Burger 2</button>
-          <p>Teste</p> 
-        </div>
       </div>
     </div>
     <footer class="flex">
@@ -31,6 +18,7 @@
 </template>
 
 <script setup>
+import Navbar from './components/page/Navbar.vue'
 import PipeGame from './components/PipeGame.vue'
 </script>
 
